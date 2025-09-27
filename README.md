@@ -36,9 +36,11 @@ Este projeto utiliza Transfer Learning com MobileNetV2 para classificar imagens 
  (tensorflow/docs#2397) é uma correção técnica simples, mas crucial, em um dos tutoriais mais populares do TensorFlow.
  Essa pessoa resolveu, mas eu havia indicado com resolver kkkk
 
-Título do PR	Fix dataset path construction in transfer_learning.ipynb tutorial
-Autor	athulya-anil
-Reposiório	tensorflow/docs (Documentação e tutoriais do TensorFlow)
+-Título do PR	Fix dataset path construction in transfer_learning.ipynb tutorial
+
+-Autor	athulya-anil
+
+-Reposiório	tensorflow/docs (Documentação e tutoriais do TensorFlow)
 
  **NotFoundError no tutorial cats_and_dogs_filtered com tf.keras.utils.get_file(extract=True) (TF 2.19, Colab) #101115**
 -Explicando o problema:
