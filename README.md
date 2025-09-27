@@ -28,20 +28,18 @@ Este projeto utiliza Transfer Learning com MobileNetV2 para classificar imagens 
 5. Avaliação no conjunto de teste
 6. Predição de novas imagens
 
-## 📦 Como usar
+## Experiencia
 
-```python
-from tensorflow.keras.models import load_model
-model = load_model('model/saved_model')
-
-# Prever nova imagem
-img = prepare_image('minha_imagem.jpg')
-pred = model.predict(img)
-print("É um cachorro!" if pred[0] > 0.5 else "É um gato!")
-
-# Experiencias
  Alem de colocar a mão na massa aprenendo e aplicando os fundamentos e conceitos apresentados no
-curso. Pode, de certa forma, colaborar com o tensorflow em observar um bug, pelo menos na minha maquina kkk
+ curso. Pode, de certa forma, colaborar com o tensorflow em observar resolver um bug, pelo menos na minha maquina.
+ Indique esse PR
+ (tensorflow/docs#2397) é uma correção técnica simples, mas crucial, em um dos tutoriais mais populares do TensorFlow.
+ Essa pessoa resolveu, mas eu havia indicado com resolver kkkk
+
+Título do PR	Fix dataset path construction in transfer_learning.ipynb tutorial
+Autor	athulya-anil
+Reposiório	tensorflow/docs (Documentação e tutoriais do TensorFlow)
+
  **NotFoundError no tutorial cats_and_dogs_filtered com tf.keras.utils.get_file(extract=True) (TF 2.19, Colab) #101115**
 -Explicando o problema:
 
@@ -55,10 +53,21 @@ curso. Pode, de certa forma, colaborar com o tensorflow em observar um bug, pelo
 -Porem em certa parte do codigo buga, pq o utlitario pode salvar cache do diretorio com no diferente do padronizado pelo codigo no colab
 possivelmente problemas de versão.
 
+
+## 📦 Como usar
+
+```python
+from tensorflow.keras.models import load_model
+model = load_model('model/saved_model')
+
+# Prever nova imagem
+img = prepare_image('minha_imagem.jpg')
+pred = model.predict(img)
+print("É um cachorro!" if pred[0] > 0.5 else "É um gato!")
+
+
 -Por se tratar de tutorial as pessoas podem ficar desmotivadas em não conseguir rodar o codigo.
 
 Bom, nunca trabalhei com TI mas me senti um bom profissional na area.
 
-img = prepare_image('minha_imagem.jpg')
-pred = model.predict(img)
-print("É um cachorro!" if pred[0] > 0.5 else "É um gato!")
+
